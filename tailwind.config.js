@@ -21,10 +21,10 @@ export default {
       },
       borderRadius: {
         DEFAULT: "10px",
-        sm: '5px'
+        sm: "5px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 
