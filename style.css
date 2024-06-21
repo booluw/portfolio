@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 
+      primary: #0076B6
+    */
+    --color-primary: 0, 118, 182;
+    --color-white: 229, 241, 247;
+    --color-grey: 132, 132, 130;
+    --color-black: 52, 52, 52;
+    --color-border: 212, 248, 229;
+  }
+
+  :root[class~="dark"] {
+    /* Dark theme */
+    --color-primary: 0, 118, 182;
+    --color-white: 245, 255, 250;
+    --color-grey: 132, 132, 130;
+    --color-black: 52, 52, 52;
+  }
+
+  :root[class~="space"] {
+    /* Space theme */
+    --color-primary: 0, 118, 182;
+    --color-white: 245, 255, 250;
+    --color-grey: 132, 132, 130;
+    --color-black: 52, 52, 52;
+  }
+}
