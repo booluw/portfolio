@@ -21,6 +21,7 @@ export default {
       },
       borderRadius: {
         DEFAULT: "10px",
+        sm: '5px'
       },
     },
   },
