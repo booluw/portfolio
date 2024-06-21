@@ -7,28 +7,56 @@
 @layer base {
   :root {
     /* 
+      Theme: Default
       primary: #0076B6
+      white: "rgba(229, 241, 247)",
+      black: "#010B13",
+      grey: "#BEBFC5",
     */
     --color-primary: 0, 118, 182;
     --color-white: 229, 241, 247;
-    --color-grey: 132, 132, 130;
-    --color-black: 52, 52, 52;
+    --color-grey: 190, 191, 197;
+    --color-black: 1, 11, 19;
     --color-border: 212, 248, 229;
   }
 
   :root[class~="dark"] {
-    /* Dark theme */
-    --color-primary: 0, 118, 182;
-    --color-white: 245, 255, 250;
+    /*
+      Theme: Dark
+      primary: #AAAABE 
+      white: #121113,
+      black: #D9E4E9,
+      grey: "#BEBFC5",
+    */
+    --color-primary: 170, 170, 190;
+    --color-white: 18, 17, 19;
     --color-grey: 132, 132, 130;
-    --color-black: 52, 52, 52;
+    --color-black: 229, 241, 247;
   }
 
   :root[class~="space"] {
-    /* Space theme */
-    --color-primary: 0, 118, 182;
-    --color-white: 245, 255, 250;
+    /*
+      Theme: Space
+      primary: #B2FFA9
+      white: #D90368
+      black: #04A777
+    */
+    --color-primary: 4, 167, 119;
+    --color-white: 10, 10, 10;
     --color-grey: 132, 132, 130;
-    --color-black: 52, 52, 52;
+    --color-black: 178, 225, 169;
+  }
+
+  :root[class~="reading"] {
+    /*
+      Theme: Space
+      primary: #65532F
+      white: #E2D4BA
+      black: #312509
+    */
+    --color-primary: 101, 83, 45;
+    --color-white: 226, 212, 186;
+    --color-grey: 132, 132, 130;
+    --color-black: 49, 37, 9;
   }
 }
