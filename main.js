@@ -1,7 +1,13 @@
 const theme_switcher = document.querySelectorAll("[data-theme]");
 
 const switchTheme = function () {
-  document.documentElement.className = localStorage.getItem("theme");
+  if (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.className = "dark";
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.className = localStorage.getItem("theme");
+  }
+
   theme_switcher.forEach((el) => {
     if (el.dataset.theme !== localStorage.getItem("theme")) {
       el.classList.remove("theme-active");
