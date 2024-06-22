@@ -61,7 +61,7 @@
   }
 }
 
-* { transition: background 150ms ease-in-out, text 50ms ease-in-out; }
+* { transition: background 150ms ease-in-out, text 50ms ease-in-out, transform 300ms ease-in-out; }
 
 html {
   overflow-x: hidden;
@@ -78,8 +78,10 @@ body {
   transform: scale(1.2);
 }
 
-.rotate-page {transform: rotate(5deg);}
-.spin-page img {
-  transition: filter .2s ease;
-  filter: grayscale(0) blur(3px);
+.rotate-page .body {
+  transform: translate(100px, 100px);
+}
+
+.spin-page .body {
+  transform: translate(200px, 200px);
 }
