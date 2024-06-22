@@ -11,22 +11,22 @@
 
 <body
   class="bg-white text-black flex items-center justify-center min-h-screen font-[300] !scrollbar !scrollbar-track-transparent !scrollbar-thumb-primary">
-  <section class="body bg-white text-black flex flex-col items-start md:flex-row p-5 md:w-[1160px] gap-5 rounded">
+  <section class="body bg-white text-black flex flex-col items-start md:flex-row p-5 md:w-[1160px] gap-5 rounded" data-scroll-container>
     <aside class="w-full md:w-1/4 md:order-1 flex flex-col gap-5 md:sticky md:top-2">
       <div class="p-5 border border-border rounded">
         <h2 class="font-[500] text-black text-sm">Navigation</h2>
         <ul class="my-3 text-primary">
           <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-            <a href="#about-me" class="w-full">About Me</a>
+            <a href="#about-me" class="w-full" data-internal-link>About Me</a>
           </li>
           <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-            <a href="#projects" class="w-full">Projects</a>
+            <a href="#projects" class="w-full" data-internal-link>Projects</a>
           </li>
           <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-            <a href="#experience" class="w-full">Experience</a>
+            <a href="#experience" class="w-full" data-internal-link>Experience</a>
           </li>
           <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-            <a href="#education" class="w-full">Education</a>
+            <a href="#education" class="w-full" data-internal-link>Education</a>
           </li>
         </ul>
         <div class="mt-5 flex items-center gap-10 md:gap-5">
@@ -138,7 +138,7 @@
       </header>
 
       <a name="about-me" id="about-me" />
-      <div class="mt-5 pb-2 border-b border-border">
+      <div class="mt-5 pb-2 border-b border-border" data-scroll-section>
         <h2 class="font-[500] text-black text-sm">About Me</h2>
         <p class="mt-2">
           <span class="opacity-80">
@@ -161,7 +161,7 @@
       </div>
 
       <a name="projects" id="projects" />
-      <div class="mt-20 relative">
+      <div class="mt-20 relative" data-scroll-section>
         <h2 class="font-[500] text-black text-sm">Projects</h2>
         <div
           class="w-full flex flex-col md:flex-row overflow-y-hidden overflow-x-auto gap-5 py-5 md:pr-14 !scrollbar !scrollbar-track-border/[.02] !scrollbar-thumb-border">
@@ -245,7 +245,7 @@
       </div>
 
       <a name="experience" id="experience" />
-      <div class="mt-20">
+      <div class="mt-20" data-scroll-section>
         <h2 class="font-[500] text-black text-sm">Experience</h2>
         <div class="flex flex-col gap-3">
           <div class="border-b border-border py-2">
@@ -431,7 +431,7 @@
       </div>
 
       <a name="education" id="education" />
-      <div class="mt-20">
+      <div class="mt-20" data-scroll-section>
         <h2 class="font-[500] text-black text-sm">Education</h2>
 
         <div class="flex flex-col gap-3">

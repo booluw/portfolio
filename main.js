@@ -1,11 +1,9 @@
 import loadEasterEgg from "./scripts/easter-egg";
+import scroll from "./scripts/locomotive-scroller";
 
 const theme_switcher = document.querySelectorAll("[data-theme]");
 
 const switchTheme = function () {
-  // console.log(
-  //   document.documentElement.classList //.match(/^(primary|reading|space|dark)$/)
-  // );
 
   document.documentElement.classList.forEach((cls) => {
     if (
@@ -45,3 +43,4 @@ theme_switcher.forEach((item) => {
 
 switchTheme();
 loadEasterEgg();
+scroll.init();
