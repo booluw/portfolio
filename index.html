@@ -13,7 +13,7 @@
   class="bg-white text-black flex items-center justify-center min-h-screen font-[300] !scrollbar !scrollbar-track-transparent !scrollbar-thumb-primary">
   <section class="body bg-white text-black flex flex-col items-start md:flex-row p-5 md:w-[1160px] gap-5 rounded" data-scroll-container>
     <aside class="w-full md:w-1/4 md:order-1 flex flex-col gap-5 md:sticky md:top-2">
-      <div class="p-5 border border-border rounded">
+      <div class="p-5 border border-border rounded" data-animate>
         <h2 class="font-[500] text-black text-sm">Navigation</h2>
         <ul class="my-3 text-primary">
           <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
@@ -91,7 +91,7 @@
           </a>
         </div>
       </div>
-      <div class="p-5 border border-border rounded bg-border">
+      <div class="p-5 border border-border rounded bg-border" data-animate>
         <h2 class="font-[500] text-black text-sm">Newsletter</h2>
         <p class="text-sm leading-snug my-3">
           I write weekly on my newsletter; <span class="font-[400]">Frontend Uncensored</span>, where I share my latest
@@ -121,26 +121,39 @@
     </aside>
     <main class="md:w-3/4">
       <header
-        class="text-xl md:text-4xl py-5 font-[200] border-b border-border sticky top-0 bg-white z-10 flex items-center justify-between">
-        <h1 class="cursor-default select-none" data-easter="dbl" title="Double Click to see inside">
+        class="text-xl md:text-4xl py-5 font-[200] border-b border-border sticky top-0 bg-white z-10 flex items-center justify-between"
+      >
+        <h1 class="cursor-default select-none" data-easter="dbl" title="Double Click to see inside" data-animate>
           Boluwatife Johnson
         </h1>
         <div class="flex gap-2">
-          <div class="p-2 rounded-full bg-[#0076B6] cursor-pointer scale-90 transition-transform ease-in-out"
-            data-theme="primary"></div>
-          <div class="p-2 rounded-full bg-[#65532F] cursor-pointer scale-90 transition-transform ease-in-out"
-            data-theme="reading"></div>
-          <div class="p-2 rounded-full bg-[#F58549] cursor-pointer scale-90 transition-transform ease-in-out"
-            data-theme="space"></div>
-          <div class="p-2 rounded-full bg-[#AAAABE] cursor-pointer scale-90 transition-transform ease-in-out"
-            data-theme="dark"></div>
+          <div
+            class="p-2 rounded-full bg-[#0076B6] cursor-pointer scale-90 transition-transform ease-in-out"
+            data-theme="primary"
+            data-animate
+          ></div>
+          <div
+            class="p-2 rounded-full bg-[#65532F] cursor-pointer scale-90 transition-transform ease-in-out"
+            data-theme="reading"
+            data-animate
+          ></div>
+          <div
+            class="p-2 rounded-full bg-[#F58549] cursor-pointer scale-90 transition-transform ease-in-out"
+            data-theme="space"
+            data-animate
+          ></div>
+          <div
+            class="p-2 rounded-full bg-[#AAAABE] cursor-pointer scale-90 transition-transform ease-in-out"
+            data-theme="dark"
+            data-animate
+          ></div>
         </div>
       </header>
 
       <a name="about-me" id="about-me" />
       <div class="mt-5 pb-2 border-b border-border" data-scroll-section>
-        <h2 class="font-[500] text-black text-sm">About Me</h2>
-        <p class="mt-2">
+        <h2 class="font-[500] text-black text-sm" data-animate>About Me</h2>
+        <p class="mt-2" data-animate>
           <span class="opacity-80">
             Building products, pushing the browser to the limit and learning exciting technologies are 3 terms that
             describe my journey into tech.
@@ -166,10 +179,13 @@
         <div
           class="w-full flex flex-col md:flex-row overflow-y-hidden overflow-x-auto gap-5 py-5 md:pr-14 !scrollbar !scrollbar-track-border/[.02] !scrollbar-thumb-border">
           <div
-            class="flex-shrink-0 w-full md:w-[250px] border border-border p-3 rounded group cursor-default flex flex-col items-start justify-between">
-            <div>
-              <img src="./public/orunla-page-screenshot.png"
-                class="w-full h-auto rounded-sm grayscale group-hover:grayscale-0 transition-all ease-in-out" />
+            class="flex-shrink-0 w-full md:w-[250px] border border-border p-3 rounded group cursor-default flex flex-col items-start justify-between"
+          >
+            <div data-animate>
+              <img
+                src="./public/orunla-page-screenshot.png"
+                class="w-full h-auto rounded-sm grayscale group-hover:grayscale-0 transition-all ease-in-out"
+              />
               <div class="mt-3">
                 <h3 class="font-[500]">Orunla</h3>
                 <p class="text-sm mt-1 mb-2 md:line-clamp-3">
@@ -178,15 +194,19 @@
                 </p>
               </div>
             </div>
-            <a href="//orunla.ng" target="_blank"
-              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]">
+            <a
+              href="//orunla.ng"
+              target="_blank"
+              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]"
+              data-animate
+            >
               orunla.ng
             </a>
           </div>
 
           <div
             class="flex-shrink-0 w-full md:w-[250px] border border-border p-3 rounded group cursor-default flex flex-col items-start justify-between">
-            <div>
+            <div data-animate>
               <img src="./public/fufumaps-page-screenshot.png"
                 class="w-full h-auto rounded-sm grayscale group-hover:grayscale-0 transition-all ease-in-out" />
               <div class="mt-3">
@@ -197,15 +217,19 @@
                 </p>
               </div>
             </div>
-            <a href="//fufumaps.com" target="_blank"
-              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]">
+            <a
+              href="//fufumaps.com"
+              target="_blank"
+              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]"
+              data-animate
+            >
               fufumaps.com
             </a>
           </div>
 
           <div
             class="flex-shrink-0 w-full md:w-[250px] border border-border p-3 rounded group cursor-default  flex flex-col items-start justify-between">
-            <div>
+            <div data-animate>
               <img src="./public/photosplash-page-screenshot.png"
                 class="w-full h-auto rounded-sm grayscale group-hover:grayscale-0 transition-all ease-in-out" />
               <div class="mt-3">
@@ -215,15 +239,19 @@
                 </p>
               </div>
             </div>
-            <a href="//ps6555753.web.app" target="_blank"
-              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]">
+            <a
+              href="//ps6555753.web.app"
+              target="_blank"
+              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]"
+              data-animate
+            >
               ps6555753.web.app
             </a>
           </div>
 
           <div
             class="flex-shrink-0 w-full md:w-[250px] border border-border p-3 rounded group cursor-default  flex flex-col items-start justify-between">
-            <div>
+            <div data-animate>
               <img src="./public/spottang-page-screenshot.png"
                 class="w-full h-auto rounded-sm grayscale group-hover:grayscale-0 transition-all ease-in-out" />
               <div class="mt-3">
@@ -233,8 +261,12 @@
                 </p>
               </div>
             </div>
-            <a href="//spotta-ng.netlify.app" target="_blank"
-              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]">
+            <a
+              href="//spotta-ng.netlify.app"
+              target="_blank"
+              class="inline-flex py-1 px-2 border border-border rounded-sm text-primary group-hover:bg-primary group-hover:text-white group-hover:border-primary text-sm font-[400]"
+              data-animate
+            >
               spotta-ng.netlify.app
             </a>
           </div>

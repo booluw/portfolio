@@ -1,5 +1,6 @@
 import loadEasterEgg from "./scripts/easter-egg";
 import scroll from "./scripts/locomotive-scroller";
+import animate from "./scripts/gsappy";
 
 const theme_switcher = document.querySelectorAll("[data-theme]");
 
@@ -38,9 +39,11 @@ theme_switcher.forEach((item) => {
     document.documentElement.classList.add(e.target.dataset.theme);
     localStorage.setItem("theme", e.target.dataset.theme);
     switchTheme();
+    animate();
   });
 });
 
+animate();
 switchTheme();
 loadEasterEgg();
 scroll.init();
