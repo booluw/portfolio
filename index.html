@@ -12,81 +12,109 @@
 <body
   class="bg-white text-black flex items-center justify-center min-h-screen font-[300] !scrollbar !scrollbar-track-transparent !scrollbar-thumb-primary">
   <section class="body bg-white text-black flex flex-col items-start md:flex-row p-5 md:w-[1160px] gap-5 rounded">
-    <aside class="w-full md:w-1/4 md:order-1 p-5 border border-border rounded md:sticky md:top-2">
-      <h2 class="font-[500] text-black text-sm">Navigation</h2>
-      <ul class="my-3 text-primary">
-        <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-          <a href="#about-me" class="w-full">About Me</a>
-        </li>
-        <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-          <a href="#projects" class="w-full">Projects</a>
-        </li>
-        <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-          <a href="#experience" class="w-full">Experience</a>
-        </li>
-        <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
-          <a href="#education" class="w-full">Education</a>
-        </li>
-      </ul>
-      <div class="mt-5 flex items-center gap-10 md:gap-5">
-        <a href="//github.com/booluw" target="_blank" class="inline text-black hover:text-primary">
-          <svg fill="currentColor" class="w-[24px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
-              </path>
-            </g>
-          </svg>
-        </a>
+    <aside class="w-full md:w-1/4 md:order-1 flex flex-col gap-5 md:sticky md:top-2">
+      <div class="p-5 border border-border rounded">
+        <h2 class="font-[500] text-black text-sm">Navigation</h2>
+        <ul class="my-3 text-primary">
+          <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
+            <a href="#about-me" class="w-full">About Me</a>
+          </li>
+          <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
+            <a href="#projects" class="w-full">Projects</a>
+          </li>
+          <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
+            <a href="#experience" class="w-full">Experience</a>
+          </li>
+          <li class="flex mb-2 py-2 border-b border-border hover:border-primary hover:font-[400]">
+            <a href="#education" class="w-full">Education</a>
+          </li>
+        </ul>
+        <div class="mt-5 flex items-center gap-10 md:gap-5">
+          <a href="//github.com/booluw" target="_blank" class="inline text-black hover:text-primary">
+            <svg fill="currentColor" class="w-[24px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                </path>
+              </g>
+            </svg>
+          </a>
 
-        <a href="//github.com/booluw" target="_blank" class="inline text-black hover:text-primary">
-          <svg fill="currentColor" class="w-[24px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
-              </path>
-            </g>
-          </svg>
-        </a>
+          <a href="//github.com/booluw" target="_blank" class="inline text-black hover:text-primary">
+            <svg fill="currentColor" class="w-[24px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                </path>
+              </g>
+            </svg>
+          </a>
 
-        <a href="mailto:boluwatife.j.johnson@gmail.com" target="_blank" class="inline text-black hover:text-primary">
-          <svg class="w-[32px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <g id="style=linear">
-                <g id="email">
-                  <path id="vector"
-                    d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round">
-                  </path>
-                  <path id="vector_2"
-                    d="M18.7698 7.7688L13.2228 12.0551C12.5025 12.6116 11.4973 12.6116 10.777 12.0551L5.22998 7.7688"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          <a href="mailto:boluwatife.j.johnson@gmail.com" target="_blank" class="inline text-black hover:text-primary">
+            <svg class="w-[32px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="style=linear">
+                  <g id="email">
+                    <path id="vector"
+                      d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                      stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round">
+                    </path>
+                    <path id="vector_2"
+                      d="M18.7698 7.7688L13.2228 12.0551C12.5025 12.6116 11.4973 12.6116 10.777 12.0551L5.22998 7.7688"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                  </g>
                 </g>
               </g>
-            </g>
-          </svg>
-        </a>
+            </svg>
+          </a>
 
-        <a href="https://docs.google.com/document/d/1QwcjFuw6chztKCYIqZjjGfrNDJVNcfEsEfi9V0eySUM/edit?usp=sharing"
-          target="_blank"
-          class="flex gap-2 bg-primary text-white hover:bg-black text-sm py-2 px-5 md:px-3 rounded-sm font-[500] transition-colors ease-in-out">
-          <svg fill="currentColor" class="w-[20px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://docs.google.com/document/d/1QwcjFuw6chztKCYIqZjjGfrNDJVNcfEsEfi9V0eySUM/edit?usp=sharing"
+            target="_blank"
+            class="flex gap-2 bg-primary text-white hover:bg-black text-sm py-2 px-5 md:px-3 rounded-sm font-[500] transition-colors ease-in-out">
+            <svg fill="currentColor" class="w-[20px]" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M23.004 1.5q.41 0 .703.293t.293.703v19.008q0 .41-.293.703t-.703.293H6.996q-.41 0-.703-.293T6 21.504V18H.996q-.41 0-.703-.293T0 17.004V6.996q0-.41.293-.703T.996 6H6V2.496q0-.41.293-.703t.703-.293zM6.035 11.203l1.442 4.735h1.64l1.57-7.876H9.036l-.937 4.653-1.325-4.5H5.38l-1.406 4.523-.938-4.675H1.312l1.57 7.874h1.641zM22.5 21v-3h-15v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3h-15v3Z">
+                </path>
+              </g>
+            </svg>
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="p-5 border border-border rounded">
+        <h2 class="font-[500] text-black text-sm">Newsletter</h2>
+        <p class="text-sm leading-snug my-3">
+          I write weekly on my newsletter; <span class="font-[400]">Frontend Uncensored</span>, where I share my latest
+          findings and how we can push the browser together to new limits.
+        </p>
+
+        <a href="//booluw.substack.com" target="_blank" class="inline-flex items-center gap-2 py-2 px-4 rounded-sm text-sm text-primary border border-primary hover:text-white hover:bg-primary">
+          <svg class="w-[24px]" viewBox="0 0 48 48" id="a" xmlns="http://www.w3.org/2000/svg" fill="#000000">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
-              <path
-                d="M23.004 1.5q.41 0 .703.293t.293.703v19.008q0 .41-.293.703t-.703.293H6.996q-.41 0-.703-.293T6 21.504V18H.996q-.41 0-.703-.293T0 17.004V6.996q0-.41.293-.703T.996 6H6V2.496q0-.41.293-.703t.703-.293zM6.035 11.203l1.442 4.735h1.64l1.57-7.876H9.036l-.937 4.653-1.325-4.5H5.38l-1.406 4.523-.938-4.675H1.312l1.57 7.874h1.641zM22.5 21v-3h-15v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3h-15v3Z">
+              <path class="stroke-current fill-current" stroke-linejoin="round" stroke-line-cap="round"
+                d="m40.0248,10.0817v-4.5814c-.3229,0-.7411-.0004-1.6553-.0004l-28.9669.0004c-.9142,0-1.318,0-1.6553,0v4.5814c.2164,0,.7411.0005,1.6553.0005l28.9669-.0005c.9142,0,1.4122,0,1.6553,0Z">
+              </path>
+              <path class="stroke-current fill-current" stroke-linejoin="round" stroke-line-cap="round"
+                d="m40.0248,18.3503v-4.5814H9.4025c-.9142,0-1.3777,0-1.6553,0v4.5814c.2646,0,.7411,0,1.6553,0h30.6223Z">
+              </path>
+              <path class="stroke-current fill-current" stroke-linejoin="round" stroke-line-cap="round"
+                d="m40.2557,42.4999v-20.1821c0-.1633-.9724-.1077-1.8866-.1077H9.4022c-.9142,0-1.6553-.0555-1.6553.1077v19.8878c.2814-.1622,15.3415-8.2118,16.1691-8.5978.5156.2972,13.6461,7.3385,16.3406,8.8914l-.0008.0007Z">
               </path>
             </g>
           </svg>
-          Resume
+          Subscribe on Substack
         </a>
       </div>
     </aside>
@@ -432,7 +460,8 @@
               </div>
             </div>
             <p class="my-3 text-sm md:w-2/3 opacity-75">
-              Always on the lookout for the latest and best course to explain latest technlologies and topics of intrest.
+              Always on the lookout for the latest and best course to explain latest technlologies and topics of
+              intrest.
             </p>
           </div>
         </div>
