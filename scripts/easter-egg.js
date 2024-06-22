@@ -17,7 +17,7 @@ const easter = {
 
       setTimeout(() => {
         document.documentElement.classList.remove("spin-page");
-      }, 700);
+      }, 1000);
 
       rotateCounter = 0
     }
