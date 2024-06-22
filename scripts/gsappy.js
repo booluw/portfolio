@@ -7,16 +7,9 @@ const animate = function () {
 
   elements.forEach((node, index) => {
     gsap.from(node, {
-      scale: 3,
-      opacity: 0.3,
+      scale: 1.5,
       duration: 0.2,
-      ease: "front(.3)",
-      force3D: true,
-      stagger: {
-        grid: ["auto", elements.length],
-        from: "start",
-        amount: elements.length,
-      },
+      stagger: -0.4,
     });
   })
 }
