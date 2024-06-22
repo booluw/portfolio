@@ -37,14 +37,14 @@
   :root[class~="space"] {
     /*
       Theme: Space
-      primary: #B2FFA9
+      primary: F58549
       white: #D90368
       black: #04A777
     */
-    --color-primary: 4, 167, 119;
-    --color-white: 10, 10, 10;
+    --color-primary: 245, 133, 73;
+    --color-white: 0, 0, 15;
     --color-grey: 132, 132, 130;
-    --color-black: 178, 225, 169;
+    --color-black: 238, 193, 112;
   }
 
   :root[class~="reading"] {
@@ -59,4 +59,8 @@
     --color-grey: 132, 132, 130;
     --color-black: 49, 37, 9;
   }
+}
+
+.theme-active {
+  transform: scale(1.2);
 }
