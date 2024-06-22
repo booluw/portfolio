@@ -61,6 +61,13 @@
   }
 }
 
+* { transition: background 150ms ease-in-out, text 50ms ease-in-out; }
+
+html {
+  overflow-x: hidden;
+  transition: all 300ms ease-in-out;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -69,4 +76,10 @@ body {
 
 .theme-active {
   transform: scale(1.2);
+}
+
+.rotate-page {transform: rotate(5deg);}
+.spin-page img {
+  transition: filter .2s ease;
+  filter: grayscale(0) blur(3px);
 }
