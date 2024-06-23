@@ -3,6 +3,7 @@ import scroll from "./scripts/locomotive-scroller";
 import animate from "./scripts/gsappy";
 
 const theme_switcher = document.querySelectorAll("[data-theme]");
+const dataInsert = document.querySelectorAll("[data-insert]");
 
 const switchTheme = function () {
 
@@ -42,6 +43,25 @@ theme_switcher.forEach((item) => {
     animate();
   });
 });
+
+(function () {
+  dataInsert.forEach((item) => {
+    switch (item.attributes["data-insert"].nodeValue) {
+      case 'date':
+        item.textContent = new Date().toLocaleDateString()
+        break;
+      case 'year':
+        item.textContent = new Date().getFullYear();
+        break;
+      case 'month':
+        item.textContent = new Date().toLocaleString('default', { month: 'long' });
+        break;
+
+      default:
+        break;
+    };
+  })
+})()
 
 animate();
 switchTheme();

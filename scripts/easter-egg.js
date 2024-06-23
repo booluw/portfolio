@@ -29,6 +29,11 @@ const eggs = {
     event: "dblclick",
     function: easter.rotate,
   },
+  clk: {
+    attr: "",
+    event: "click",
+    function: easter.rotate,
+  }
 };
 
 const loadEasterEgg = function () {
