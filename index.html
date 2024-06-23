@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7N8P01YS7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H7N8P01YS7');
+  </script>
+
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -136,10 +146,19 @@
     </aside>
     <main class="md:w-3/4">
       <header
-        class="text-xl md:text-4xl py-5 font-[200] border-b border-border sticky top-0 bg-white z-10 flex items-center justify-between">
-        <h1 class="cursor-default select-none" data-easter="dbl" title="Double Click to see inside" data-animate>
-          Boluwatife Johnson
-        </h1>
+        class="py-5 border-b border-border sticky top-0 bg-white z-10 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img
+            src="/Booluw.jpg"
+            class="rounded-sm border border-primary p-[2px] grayscale cursor-pointer select-none hover:grayscale-0 transition-all ease-in-out rotate-12"
+            width="36px"
+            data-easter="dbl" title="Double Click to see inside"
+            data-animate
+          />
+          <h1 class="text-xl md:text-4xl font-[300]" data-animate>
+            Boluwatife Johnson
+          </h1>
+        </div>
         <div class="flex gap-2">
           <div class="p-2 rounded-full bg-[#0076B6] cursor-pointer scale-90 transition-transform ease-in-out"
             data-theme="primary"></div>
