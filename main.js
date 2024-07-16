@@ -1,4 +1,4 @@
-import loadEasterEgg from "./scripts/easter-egg";
+// import loadEasterEgg from "./scripts/easter-egg";
 import scroll from "./scripts/locomotive-scroller";
 import animate from "./scripts/gsappy";
 
@@ -65,5 +65,5 @@ theme_switcher.forEach((item) => {
 
 animate();
 switchTheme();
-loadEasterEgg();
+// loadEasterEgg();
 scroll.init();

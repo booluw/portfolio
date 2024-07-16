@@ -38,7 +38,6 @@ const eggs = {
 
 const loadEasterEgg = function () {
   easterEggs.forEach((el) => {
-    // console.log(eggs[el.dataset.easter].event);
     el.addEventListener(eggs[el.dataset.easter].event, (e) => {
       eggs[el.dataset.easter].function()
     });
